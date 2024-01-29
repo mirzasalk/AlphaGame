@@ -1,0 +1,26 @@
+﻿<Window x:Class="GameTreasury.FlappyBird"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameTreasury"
+        mc:Ignorable="d"
+        Title="FlappyBird" Height="500" Width="900">
+    <Canvas Name="myCanvas" Focusable="True" KeyDown="keyIsDown" KeyUp="keyIdUp" Background="LightBlue">
+
+
+
+        <Image Tag="pipe1" Source="resourses/pipeTop.png" Width="65" Height="400" Canvas.Left="328" Canvas.Top="-168"  />
+        <Image Tag="pipe1" Source="resourses/pipeBottom.png" Width="65" Height="400" Canvas.Left="328" Canvas.Top="349" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+
+        <Image Tag="pipe2" Source="resourses/pipeTop.png" Width="65" Height="400" Canvas.Left="529" Canvas.Top="-233" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+        <Image Tag="pipe2" Source="resourses/pipeBottom.png" Width="65" Height="400" Canvas.Left="529" Canvas.Top="273" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+
+        <Image Tag="pipe3" Source="resourses/pipeTop.png" Width="65" Height="400" Canvas.Left="727" Canvas.Top="-192" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+        <Image Tag="pipe3" Source="resourses/pipeBottom.png" Width="65" Height="400" Canvas.Left="727" Canvas.Top="321" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+
+
+        <Image Name="flappyBird"  Source="resourses/flappyBird.png" Width="50" Height="50" Canvas.Left="85" Canvas.Top="190" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+        <Label Name="showScore" FontSize="40"   Content="Score: 0"/>
+    </Canvas>
+</Window>

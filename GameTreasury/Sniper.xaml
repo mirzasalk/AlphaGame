@@ -1,0 +1,14 @@
+﻿<Window x:Class="GameTreasury.Sniper"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameTreasury"
+        mc:Ignorable="d"
+        Title="Snajper" Height="450" Width="800">
+    <Canvas Name="myCanvas" Focusable="True" MouseMove="moveingScoope" MouseLeftButtonDown="shooting">
+        <Label Name="showScore" Content="Score: 0" FontSize="25" Canvas.Left="669" Canvas.Top="13" HorizontalAlignment="Center" VerticalAlignment="Top"  />
+        <Label Name="showMisses" Content="Misses: 0" FontSize="25" Canvas.Left="667" Canvas.Top="58" HorizontalAlignment="Left" VerticalAlignment="Center"  />
+        <Image Name="scopeImage" Width="50" Height="50" Panel.ZIndex="999" IsHitTestVisible="False" Canvas.Left="98" Canvas.Top="76" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Canvas>
+</Window>

@@ -1,0 +1,62 @@
+﻿<Window x:Class="GameTreasury.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameTreasury"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1400" Width="1400" ResizeMode="NoResize"
+        Top="0"
+        Left="50">
+
+    <ScrollViewer Focusable="True" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" PanningRatio="0.5">
+        <Canvas Name="myCanvas" Background="#333230"  Width="1400" Height="1400">
+            <Rectangle Width="1400" Height="100" Fill="#FFC61A" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="35"/>
+            <Button Content="Igrice" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="560" Canvas.Top="78" FontSize="15" FontWeight="Bold" Click="IgriceButton_Click"/>
+            <Button Content="O nama" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="673" Canvas.Top="78" FontSize="15" FontWeight="Bold" Click="ONamaButton_Click"/>
+            <Button Content="Članstvo" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="797" Canvas.Top="78" FontSize="15" FontWeight="Bold" Click="ClanarinaButton_Click"/>
+            <Button Name="LoginBtn" Content="Prijavi se" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="1293" Canvas.Top="78" FontSize="15" FontWeight="Bold" Click="LoginButton_Click"/>
+            <TextBlock Name="hesh" Text="/" FontWeight="Bold" FontSize="15" Canvas.Left="1270" Canvas.Top="78" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Name="RegBtn" Content="Registruj se" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="1166" Canvas.Top="78" FontSize="15" FontWeight="Bold" Click="RegisterButton_Click" />
+            <Button Name="odjaviseBtn" Content="Odjavi se" Background="Transparent" BorderThickness="0" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="1166" Canvas.Top="78" FontSize="15" FontWeight="Bold" Click="OdjaviseBtn_Click" />
+            <Image Source="pack://application:,,,/resourses/logo.png" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="100" Canvas.Top="35" />
+
+            <Frame x:Name="mainFrame" Background="#333230" NavigationUIVisibility="Hidden" Canvas.Top="135"/>
+            <ScrollViewer  Name="myScrollViewer" Panel.ZIndex="920" Height="500" Width="600" Background="#FFC61A" Canvas.Left="401" Visibility="Hidden" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <StackPanel>
+                    <Button Height="20" Content="X" Background="Transparent" Click="komentariExit"/>
+                    <TextBlock  Text="Komentari" FontSize="30" Width="200"  TextAlignment="Center"/>
+                    <TextBlock  Name="KometariText" FontSize="20"  TextWrapping="Wrap" />
+                </StackPanel>
+
+
+            </ScrollViewer>
+            <ScrollViewer  Name="UnosVremenaScroll" Panel.ZIndex="920" Height="300" Width="600" Background="#FFC61A" Canvas.Left="401" Visibility="Hidden" Canvas.Top="192" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <StackPanel>
+                    <Button Height="20" Content="X" Background="Transparent" Click="unosVremExit"/>
+                    <TextBlock Name="ZeljenoVreme" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Unesite zeljeno vreme"/>
+                    <TextBox Name="UnesenoVreme" FontSize="30" Height="50" Width="200" Margin="30"/>
+
+
+
+                </StackPanel>
+
+
+            </ScrollViewer>
+            <Button Name="dodajVremeBtn" Panel.ZIndex="920" Visibility="Hidden" Height="35" Width="600"   Content="Plati za igru " Background="#333230" Foreground="White" FontSize="20" Click="platiZaIgru" Canvas.Left="400" Canvas.Top="492" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+            <Button Name="DodajScroll" Panel.ZIndex="920" Height="35" Width="600" Visibility="Hidden"  Content="Dodaj Komentar" Background="#333230" Foreground="White" FontSize="20" Click="prikaziUnosWindov" Canvas.Left="401" Canvas.Top="692" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+            <Rectangle Name="BlurBackground" Visibility="Hidden" Panel.ZIndex="900" Width="1400" Height="1400" Fill="#80000000" />
+
+            <Rectangle Name="recZaKom" Panel.ZIndex="920" Visibility="Hidden" Height="300" Width="600" Fill="#FFC61A" Canvas.Left="401" Canvas.Top="192" />
+            <TextBox Name="poljeZaUnos" Panel.ZIndex="920" Visibility="Hidden" Width="500" Height="250" Canvas.Left="450" Canvas.Top="225" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Name="poljeZaIzlaz" Panel.ZIndex="920" Visibility="Hidden" Height="20" Content="X" Background="Transparent" Click="komentariExitDva" Canvas.Left="400" Canvas.Top="192" Width="600"  />
+
+            <Button Name="dodajKomentarBtn" Panel.ZIndex="920" Visibility="Hidden" Height="35" Width="600"   Content="Dodaj Komentar" Background="#333230" Foreground="White" FontSize="20" Click="dodajKomentar" Canvas.Left="400" Canvas.Top="492" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Name="TempTect" FontSize="20" Width="300" Height="200" Canvas.Left="50" Canvas.Top="1103" /> 
+        </Canvas>
+    </ScrollViewer>
+</Window>

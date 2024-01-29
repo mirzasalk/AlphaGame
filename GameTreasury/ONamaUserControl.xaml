@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="GameTreasury.ONamaUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameTreasury"
+             mc:Ignorable="d" 
+             d:DesignHeight="1400" d:DesignWidth="1400">
+    <Grid Background="#333230">
+        <Rectangle Width="1070" Fill="#FFC61A" Margin="168,17,162,280"/>
+        <Image Source="/resourses/player.png" Width="100" Height="100" Margin="885,385,415,915"/>
+        <Image Source="/resourses/netRight.png" Width="100" Height="100" Margin="640,378,660,922"/>
+        <Image Source="/resourses/newRunner_01.gif" Width="100" Height="100" Margin="393,372,907,928"/>
+        <Image Source="/resourses/sniper-aim.png" Width="100" Height="100" Margin="635,174,665,1126"/>
+        <Image Source="/resourses/balloon2.png" Width="100" Height="100" Margin="887,174,413,1126"/>
+        <Image Source="/resourses/flappyBird.png" Width="100" Height="100" Margin="391,175,909,1125"/>
+
+        <TextBlock Width="1000" Height="100" FontSize="25" FontWeight="Bold" TextWrapping="Wrap" Text="Dobrodošli na našu igraonicu, virtuelno mesto gde ćete pronaći nostalgične igre koje su obeležile ere video igara. Naša strast prema klasičnim igricama poput:" Margin="203,51,197,1249"/>
+        <TextBlock Width="150" Height="50" FontSize="25" FontWeight="Bold"  TextWrapping="Wrap" Text="FlappyBird" Margin="381,318,869,1032"/>
+        <TextBlock Width="150" Height="50" FontSize="25" FontWeight="Bold"  TextWrapping="Wrap" Text="Snajper" Margin="641,316,609,1034"/>
+        <TextBlock Width="150" Height="50" FontSize="25" FontWeight="Bold"  TextWrapping="Wrap" Text="Trkač" Margin="405,507,845,843"/>
+        <TextBlock Width="180" Height="50" FontSize="25" FontWeight="Bold"  TextWrapping="Wrap" Text="Balonomanija" Margin="856,318,364,1032"/>
+        <TextBlock Width="180" Height="50" FontSize="25" FontWeight="Bold"  TextWrapping="Wrap" Text="Space Battle" Margin="845,507,375,843"/>
+        <TextBlock Width="180" Height="50" FontSize="25" FontWeight="Bold"  TextWrapping="Wrap" Text="Uhvati Poklone" Margin="596,506,624,844"/>
+        <TextBlock Width="1000" FontSize="25" FontWeight="Bold" TextWrapping="Wrap" Text="nas je inspirisala da stvorimo ovu platformu za sve ljubitelje retro igara.Naš cilj je da omogućimo svima da se vrate u vreme kada su ove igre dominirale svetom video igara. Bez obzira na to da li ste već iskusni igrač ili tek počinjete svoje putovanje kroz svet video igara, naša kolekcija klasičnih igara ima nešto za svakoga." Margin="216,594,184,656"/>
+        <TextBlock Width="1000" FontSize="25" FontWeight="Bold" TextWrapping="Wrap" Text="Želimo da podelimo radost i uzbuđenje koje su ove igre pružale generacijama igrača. Naš tim je posvećen očuvanju nasleđa ovih igara i omogućavanju svima da ih ponovo dožive ili otkriju." Margin="216,752,184,535"/>
+        <TextBlock Width="1000" FontSize="25" FontWeight="Bold" TextWrapping="Wrap" Text="Sajt je osmišljen sa ciljem da vam pruži jednostavan i ugodan doživljaj igranja. Nadamo se da ćete uživati u igranju ovih klasika kao što smo mi uživali u njihovom stvaranju. Hvala što ste deo naše zajednice i želimo vam mnogo sreće i zabave dok istražujete svet retro igara." Margin="216,887,184,353"/>
+        <TextBlock Width="1000" FontSize="25" FontWeight="Bold" TextWrapping="Wrap" Text="Hvala što ste s nama!" Margin="216,1047,184,240"/>
+
+
+    </Grid>
+</UserControl>

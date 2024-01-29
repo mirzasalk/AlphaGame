@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="GameTreasury.Prijavljivanje"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameTreasury"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1400">
+    <Canvas Height="324" Width="400" Background="#FFC61A"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="501,80,0,0">
+
+        <TextBlock Text="Unesite svoje podatke:" FontWeight="Bold" FontSize="16" Canvas.Left="115" Canvas.Top="34" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Email:" VerticalAlignment="Top" Canvas.Left="74" Canvas.Top="86" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txtEmail" Width="252" Height="34" Canvas.Left="74" Padding="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Canvas.Top="107" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <TextBlock Text="Šifra:" Canvas.Left="74" Canvas.Top="153" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="txtPassword" Width="252" Canvas.Left="74" Canvas.Top="181" Height="34" Padding="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+
+
+        <Button Content="Prijavi se" Background="#333230" Foreground="White"  Width="135" HorizontalAlignment="Center" Click="Prijavljivanje_click" Canvas.Left="132" Canvas.Top="251" Height="38" VerticalAlignment="Top"/>
+
+
+    </Canvas>
+</UserControl>

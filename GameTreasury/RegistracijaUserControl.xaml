@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="GameTreasury.RegistracijaUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameTreasury"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1400">
+    <Canvas Height="466" Width="400" Background="#FFC61A"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="501,90,0,0">
+
+        <TextBlock Text="Unesite svoje podatke:" FontWeight="Bold" FontSize="16" Canvas.Left="115" Canvas.Top="34" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+        <TextBlock Text="Ime:" VerticalAlignment="Top" Canvas.Left="78" Canvas.Top="66" HorizontalAlignment="Center"/>
+        <TextBox x:Name="txtName" Width="252" Height="34" Padding="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Canvas.Left="74" Canvas.Top="85" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+
+        <TextBlock Text="Prezime:" VerticalAlignment="Top" Canvas.Left="74" Canvas.Top="131"/>
+        <TextBox x:Name="txtLastName" Width="252" Padding="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Height="34" Canvas.Left="74" Canvas.Top="152"/>
+
+
+        <TextBlock Text="Email:" VerticalAlignment="Top" Canvas.Left="74" Canvas.Top="194"/>
+        <TextBox x:Name="txtEmail" Width="252" Height="34" Canvas.Left="74" Padding="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Canvas.Top="215" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+        <TextBlock Text="Šifra:" Canvas.Left="74" Canvas.Top="261"/>
+        <PasswordBox x:Name="txtPassword" Width="252" Canvas.Left="74" Canvas.Top="282" Height="34" Padding="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" />
+
+
+
+        <Button Content="Registruj se" Background="#333230" Foreground="White"  Width="135" HorizontalAlignment="Left" Click="Register_click" Canvas.Left="132" Canvas.Top="359" Height="38"/>
+
+
+    </Canvas>
+</UserControl>

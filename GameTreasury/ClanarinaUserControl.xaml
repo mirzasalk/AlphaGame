@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="GameTreasury.ClanarinaUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GameTreasury"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1400">
+    <Canvas Name="clanarinaCanvas">
+        <Rectangle Width="1000" Height="500" Fill="#FFC61A" HorizontalAlignment="Center" Canvas.Left="200" VerticalAlignment="Top" Canvas.Top="96"></Rectangle>
+        <TextBlock Name="naslov" FontSize="40" FontWeight="Bold" TextAlignment="Center" Canvas.Left="325" Canvas.Top="128" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Name="tekst" FontSize="30" TextAlignment="Center"  TextWrapping="Wrap" Width="900"  Canvas.Left="250" Canvas.Top="212" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Button Name="pijaviSeBtn"  Width = "180"  Height = "40"  Background = "#333230"  Foreground ="White" FontSize="15"  Content="Postani Član" Canvas.Left="610" Canvas.Top="425" Click="PostaniClanClick" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+    </Canvas>
+</UserControl>
